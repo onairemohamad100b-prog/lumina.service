@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Office Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e40af;
+      --accent: #3b82f6;  
+      --success: #16a34a; 
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --text: #334155;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Cairo', sans-serif; background: var(--bg); color: var(--text); }
+
+    header { 
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white; padding: 40px 20px; text-align: center;
+    }
+    header img { height: 70px; margin-bottom: 15px; }
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p { opacity: 0.9; margin-top: 5px; }
+
+    .container { 
+      max-width: 1200px; margin: -30px auto 50px; padding: 20px; 
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;
+    }
+    
+    .card { 
+      background: var(--card); border-radius: 16px; padding: 30px; 
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: center;
+      transition: all 0.3s ease; border-top: 4px solid var(--accent);
+    }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+    
+    .icon { font-size: 45px; margin-bottom: 15px; }
+    .card h3 { color: var(--primary); font-size: 22px; margin-bottom: 10px; }
+    .card p { font-size: 15px; color: #64748b; min-height: 45px; }
+    .price { font-size: 26px; font-weight: 700; color: var(--success); margin: 20px 0; }
+    
+    .btn { 
+      background: var(--success); color: white; padding: 14px 25px; border-radius: 10px; 
+      text-decoration: none; font-weight: 700; display: inline-block; width: 100%;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #128C7E; }
+
+    footer { 
+      text-align: center; padding: 30px 20px; background: var(--primary); color: white; 
+    }
+    footer a { color: white; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="رابط-الشعار-هنا.png" alt="شعار LUMINA">
+  <h1>خدمات Microsoft Office الاحترافية</h1>
+  <p>للتواصل المباشر: <a href="https://wa.me/212783185367" style="color:white; text-decoration:underline;">واتساب</a></p>
+</header>
+
+<div class="container">
+
+  <!-- Excel -->
+  <div class="card">
+    <div class="icon">📊</div>
+    <h3>Microsoft Excel</h3>
+    <p>جداول احترافية، معادلات، لوحات تحكم، وتحليل بيانات متقدم</p>
+    <div class="price">150 درهم</div>
+    <a class="btn" href="https://wa.me/212783185367?text=السلام، أريد طلب خدمة Microsoft Excel" target="_blank">
+      اطلب الخدمة الآن
+    </a>
+  </div>
+
+  <!-- Word -->
+  <div class="card">
+    <div class="icon">📝</div>
+    <h3>Microsoft Word</h3>
+    <p>تنسيق مستندات، كتابة تقارير، CV احترافي، وكتب</p>
+    <div class="price">100 درهم</div>
+    <a class="btn" href="https://wa.me/212783185367?text=السلام، أريد طلب خدمة Microsoft Word" target="_blank">
+      اطلب الخدمة الآن
+    </a>
+  </div>
+
+  <!-- PowerPoint -->
+  <div class="card">
+    <div class="icon">📈</div>
+    <h3>Microsoft PowerPoint</h3>
+    <p>عروض تقديمية بتصميم عصري وحركات احترافية</p>
+    <div class="price">200 درهم</div>
+    <a class="btn" href="https://wa.me/212783185367?text=السلام، أريد طلب خدمة Microsoft PowerPoint" target="_blank">
+      اطلب الخدمة الآن
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 LUMINA SERVICES | تواصل معنا: <a href="https://wa.me/212783185367">واتساب</a>
+</footer>
+
+</body>
+</html>
